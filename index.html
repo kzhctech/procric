@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <style>
+    
+    
+    /* 
+    
+    <img class="cov1" src="cov1.png" alt="">
+<img clas
+s="cov2" src="cov2.png" alt="">
+ 
+    
+    
+    */
+    
+     .lefthand {
+  transform: rotateY(180deg);
+}
+    
+    
+     .ballmarker{
+      width: 5px;
+      background-color: #56ddff;
+      z-index: 99999999999999;
+      position: absolute;
+    }
+    
+      .ballmarker img{
+           width: 100%;
+           height: auto;
+           transform: scale(2.5) translateY(-5px);
+         }
+    
+    
+     #bm1{
+      height: 90px;
+      bottom: 80px;
+      left: 110px;
+      transform: rotateZ( 13deg );
+      animation-name: length;
+      animation-duration: 3s;
+      animation-fill-mode: forwards;
+    }
+    
+    
+    #bm2{
+      height: 80px;
+      bottom: 145px;
+      left: 122px;
+      transform: rotateZ(13deg);
+      opacity: 0;
+      background-color: #007795;
+      animation-name: direction;
+      animation-delay: 3s;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
+   
+    
+   @keyframes length {
+  0% {
+    height: 1px;
+    
+  }
+100% {
+  height: 70px;
+  
+}
+}
+
+   
+  @keyframes direction {
+  0% {
+    height: 1px;
+    opacity: 1;
+  }
+100% {
+  height: 60px;
+  opacity: 1;
+}
+}
+
+
+  @keyframes lengthLength {
+  0% {
+    height: 1px;
+    
+  }
+100% {
+  height: 80px;
+  
+}
+}
+
+
+  @keyframes dirLength {
+  0% {
+    height: 1px;
+    opacity: 1;
+  }
+100% {
+  height: 40px;
+  opacity: 1;
+}
+}
+
+
+  @keyframes lengthYourker {
+  0% {
+    height: 1px;
+    
+  }
+100% {
+  height: 100px;
+  
+}
+}
+
+
+  @keyframes dirYourker {
+  0% {
+    height: 1px;
+    opacity: 1;
+  }
+100% {
+  height: 25px;
+  opacity: 1;
+}
+}
+
+
+  @keyframes lengthSlot {
+  0% {
+    height: 1px;
+  }
+100% {
+  height: 90px;
+  
+}
+}
+
+
+  @keyframes dirSlot {
+  0% {
+    height: 1px;
+    opacity: 1;
+    
+  }
+100% {
+  height: 30px;
+  opacity: 1;
+  
+}
+}
+
+ 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .batsman{
+      position: absolute;
+      z-index: 9999999;
+      height: 80px;
+      width: auto;
+      bottom: 177px;
+      animation-name: ;
+      animation-delay: 4.5s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+    
+    
+      .cov1{
+      position: absolute;
+      z-index: 9999999;
+      left: 100px;
+      height: 86px;
+      width: auto;
+      bottom: 177px;
+      opacity: 0;
+      animation-name: cov1;
+      animation-delay: 4.8s;
+      animation-duration: 0.8s;
+    }
+    
+    
+     .cov2{
+      position: absolute;
+      z-index: 9999999;
+      height: 90px;
+      left: 100px;
+      width: auto;
+      bottom: 177px;
+      opacity: 0;
+      animation-name: cov2;
+      animation-delay: 5.5s;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards;
+    }
+    
+     
+    .kiper{
+      position: absolute;
+      z-index: 0;
+      height: 55px;
+      left: 110px;
+      width: auto;
+      bottom: 197px;
+    }
+    
+    
+
+    
+    
+    .lengName{
+      background-color: #fff;
+      text-align: center;
+      font-size: 11px;
+      visibility: hidden;
+      animation: bgc 1s infinite;
+    }
+    
+    .show{
+      visibility: visible;
+    }
+      .field{
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        perspective: 350px;
+        position: relative;
+      }
+      .pitch{
+        height: 130px;
+        width: 50px;
+        background-color: #a58e00;
+        transform: rotateX( 60deg ) scale(1.8);
+      }
+      .stump{
+        height: 30px;
+        width: 3px;
+        z-index: 9999;
+        background: url('sbg.jpg');
+        position: absolute;
+      }
+      
+      .center{
+        right: 150px;
+      }
+      .left{
+        right: 156px;
+      }
+      .right{
+        right: 144px;
+      }
+    .top{
+       margin-top: -120px;
+    }
+    
+    .bottom{
+      margin-top: 134px;
+    }
+    
+    .crline{
+      width: 70px;
+      height: 2px;
+      margin-left: -10px;
+      background-color: #fff;
+    }
+    
+    .bat{
+      margin-top: 25px;
+    }
+    
+    .bowl{
+      margin-top: 30px;
+    }
+    
+
+
+   
+  @keyframes batsman {
+  0% {
+    opacity: 1;
+  }
+100% {
+  opacity: 0;
+}
+}
+
+
+  @keyframes cov1 {
+  0% {
+    opacity: 0;
+  }
+100% {
+  opacity: 1;
+}
+}
+
+
+  @keyframes cov2 {
+  0% {
+    opacity: 0;
+  }
+100% {
+  opacity: 1;
+}
+}
+
+    
+    @keyframes example {
+  0% {transform:scale(1);}
+  50% {transform:scale(2);}
+100% {transform:scale(1);}
+}
+  @keyframes bgc {
+  0% {background-color: #ffffff;}
+  50% {background-color: #ffffff00;}
+100% {background-color: #ffffff;}
+}
+
+    .cb{
+      width: 15px;
+      height: 15px;
+      z-index: 99999999;
+      position: absolute;
+      top: 85.0px;
+      visibility: hidden;
+      left: 120px;
+      animation: example 1s infinite;
+    }
+    </style>
+    <title>Speech color changer</title>
+
+    <link rel="stylesheet" href="document_files/style.cs">
+  </head>
+
+  <body>
+ <div id="myDiv" class="field">
+   <img src="cb.png" class="cb" alt="">
+ <div class="stump top left"></div>
+ <div class="stump top center"></div>
+<div class="stump top right"></div>
+<img class="kiper" src="kiper.png" alt="">
+
+<img class="batsman" src="batsman.png" alt="">
+
+   <div class="ballmarker" id="bm2">
+     <img src="cb.png" alt="">
+   </div>
+  
+  <div class="ballmarker" id="bm1">
+    <img src="cb.png" alt="">
+    </div>
+   
+ <div class="stump bottom left"></div>
+ <div class="stump bottom center"></div>
+ <div class="stump bottom right"></div>
+        <div class="pitch">
+          <div class="crline bat"></div>
+         <div id="lenawrap">
+            <div id="Yourker" class="lengName">
+            Yourker
+          </div>
+           <div id="Slot" class="lengName ">
+            Slot
+          </div>
+            <div id="Length" class="lengName">
+            Length
+          </div>
+            <div id="Short" class="lengName show">
+            Short
+          </div>
+         </div>
+          <div class="crline bowl"></div>
+        </div>
+      </div>
+      <button onclick="toggleHand()">Toggle Hand</button>
+      <h3>
+        Yourker
+      </h3>
+       <button onclick="Yourker()">Yourker(of)</button>
+              <button onclick="Yourker('inline')">Yourker(in)</button>
+                     <button onclick="Yourker('leg')">Yourker(leg)</button>
+                   
+                     <br>
+        <h3>
+          Slot
+        </h3>    
+       <button onclick="Slot()">Slot(of)</button>
+          <button onclick="Slot('inline')">Slot(in)</button>
+             <button onclick="Slot('leg')">Slot(leg)</button>
+       <br />
+       <h3>Length</h3>
+       <button onclick="Length()">Length(of)</button>
+              <button onclick="Length('inline')">Length(in)</button>
+                     <button onclick="Length('leg')">Length(leg)</button>
+                   
+                     <br>
+       <h3>Short</h3>
+      <button onclick="Short()">Short(of)</button>
+        
+      <button onclick="Short('inline')">Short(in)</button>
+        
+      <button onclick="Short('leg')">Short(leg)</button>
+      <br>
+      <h3></h3>
+      <button id="vcm">Voice Command</button>
+      
+    <div>
+      <p class="output"><em>...diagnostic messages</em></p>
+    </div>
+
+    <script src="document_files/script.js"></script>
+    <script src="main.js" type="text/javascript" charset="utf-8"></script>
+  
+
+</body>
+</html>
